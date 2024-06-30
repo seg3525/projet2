@@ -1,4 +1,16 @@
 import Hero from "../components/Hero";
+import Games from "../components/Games";
+import Leaders from "../components/Leaders";
+import Bracket from "../components/Bracket";
+import ChatPreviews from "../components/ChatPreviews";
 export default function Home() {
-  return <div className="w-full h-24 bg-orange-500"></div>;
+  return (
+    <>
+      <Hero />
+      <Games />
+      <Leaders />
+      <Bracket />
+      <ChatPreviews />
+    </>
+  );
 }

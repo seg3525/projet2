@@ -7,6 +7,11 @@ export default {
         oilers: "#FC4C02",
         panthers: "#C8102E",
       },
+      backgroundColor: {
+        button: "#0b8ce9",
+        oilers: "#FC4C02",
+        panthers: "#C8102E",
+      },
       screens: {
         "3xl": { max: "1920px" },
         "2xl": { max: "1536px" },

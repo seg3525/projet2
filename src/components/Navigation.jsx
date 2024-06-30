@@ -4,7 +4,7 @@ import logo from "../assets/logo.svg";
 export default function Navigation() {
   return (
     <>
-      <nav className="bg-black w-full text-white flex justify-between items-center px-8 py-4 font-bold shadow-lg">
+      <nav className="bg-black w-full text-white flex justify-between items-center px-8 py-8 font-bold shadow-lg">
         <div
           className="flex flex-row items-center gap-4 cursor-pointer"
           onClick={() => {
