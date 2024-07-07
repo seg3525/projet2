@@ -1,4 +1,8 @@
 import { useState } from "react";
+import oilers from "../assets/oilers.png";
+import mcdavid from "../assets/mcdavid.png";
+import blackhawks from "../assets/blackhawks.png";
+import bedard from "../assets/bedard.png";
 
 export default function Stats() {
   const playerData = [
@@ -238,6 +242,36 @@ export default function Stats() {
               ))}
           </tbody>
         </table>
+
+        <h2 className="text-2xl font-bold text-center p-4 my-10">
+          Que pensent les pros?
+        </h2>
+        <div className="flex  flex-col items-center justify-center w-10/12 border gap-4">
+          <div className="flex md:flex-col flex-row items-center justify-left bg-slate-300 rounded-xl p-8 w-full">
+            <img src={oilers} alt="Oilers" className="w-16 h-16" />
+            <img src={mcdavid} alt="McDavid" className="w-16 h-16" />
+            <p className="p-4 text-center">
+              "Connor McDavid est le meilleur joueur de la ligue, il est
+              incroyable!"
+            </p>
+            <p className="p-4 text-center font-bold">
+              {" "}
+              - John Doe, Analyste ESPN
+            </p>
+          </div>
+          <div className="flex md:flex-col flex-row items-center justify-left bg-slate-300 rounded-xl p-8 w-full">
+            <img src={blackhawks} alt="Oilers" className="w-16 h-16" />
+            <img src={bedard} alt="McDavid" className="w-16 h-16" />
+            <p className="p-4 text-center">
+              "Connor Bedard est le future du hockey, son potentiel est
+              exceptionnel!"
+            </p>
+            <p className="p-4 text-center font-bold">
+              {" "}
+              - Marc Doe, Analyste Sportsnet
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
