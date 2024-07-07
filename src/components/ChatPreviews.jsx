@@ -26,11 +26,11 @@ export default function Chat() {
               <span className="font-bold">John Doe</span>
             </div>
             <div className="flex flex-row items-center gap-2 p-4">
-              <img src={user} alt className="w-8 h-8" />
+              <img src={user} alt="User" className="w-8 h-8" />
               <span className="font-bold">Jane Doe</span>
             </div>
             <div className="flex flex-row items-center gap-2 p-4">
-              <img src={user} alt className="w-8 h-8" />
+              <img src={user} alt="User" className="w-8 h-8" />
               <span className="font-bold">Jeremiah Doe</span>
             </div>
           </div>
@@ -58,11 +58,11 @@ export default function Chat() {
               <span className="font-bold">Mark Doe</span>
             </div>
             <div className="flex flex-row items-center gap-2 p-4">
-              <img src={user} alt className="w-8 h-8" />
+              <img src={user} alt="User" className="w-8 h-8" />
               <span className="font-bold">Gerald Doe</span>
             </div>
             <div className="flex flex-row items-center gap-2 p-4">
-              <img src={user} alt className="w-8 h-8" />
+              <img src={user} alt="User" className="w-8 h-8" />
               <span className="font-bold">Mary Doe</span>
             </div>
           </div>
