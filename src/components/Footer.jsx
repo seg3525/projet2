@@ -4,6 +4,7 @@ import linkedin from "../assets/linkedin.svg";
 import instagram from "../assets/instagram.svg";
 import youtube from "../assets/youtube.svg";
 import facebook from "../assets/facebook.svg";
+import { t } from "../i18n";
 
 export default function Footer() {
   return (
@@ -37,13 +38,13 @@ export default function Footer() {
         <div>
           <ul className="flex flex-row gap-4 font-bold">
             <li>
-              <Link to="/statistiques">Statistiques</Link>
+              <Link to="/statistiques">{t("navbar.stats")}</Link>
             </li>
             <li>
-              <Link to="/predictions">Prédictions</Link>
+              <Link to="/predictions">{t("navbar.predictions")}</Link>
             </li>
             <li>
-              <Link to="/chat">Chat</Link>
+              <Link to="/chat">{t("navbar.chat")}</Link>
             </li>
           </ul>
         </div>

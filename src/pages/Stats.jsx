@@ -3,13 +3,14 @@ import oilers from "../assets/oilers.png";
 import mcdavid from "../assets/mcdavid.png";
 import blackhawks from "../assets/blackhawks.png";
 import bedard from "../assets/bedard.png";
+import { t } from "../i18n";
 
 export default function Stats() {
   const playerData = [
     {
       name: "Connor McDavid",
-      team: "Edmonton Oilers",
-      position: "Centre",
+      team: t("stats.teams.edmonton"),
+      position: t("stats.positions.center"),
       points: 105,
       goals: 33,
       assists: 72,
@@ -18,8 +19,8 @@ export default function Stats() {
     },
     {
       name: "Leon Draisaitl",
-      team: "Edmonton Oilers",
-      position: "Centre",
+      team: t("stats.teams.edmonton"),
+      position: t("stats.positions.center"),
       points: 84,
       goals: 31,
       assists: 53,
@@ -28,8 +29,8 @@ export default function Stats() {
     },
     {
       name: "Mitch Marner",
-      team: "Toronto Maple Leafs",
-      position: "Ailier Droit",
+      team: t("stats.teams.toronto"),
+      position: t("stats.positions.rightWing"),
       points: 67,
       goals: 20,
       assists: 47,
@@ -38,8 +39,8 @@ export default function Stats() {
     },
     {
       name: "Auston Matthews",
-      team: "Toronto Maple Leafs",
-      position: "Centre",
+      team: t("stats.teams.toronto"),
+      position: t("stats.positions.center"),
       points: 66,
       goals: 41,
       assists: 25,
@@ -48,8 +49,8 @@ export default function Stats() {
     },
     {
       name: "Brad Marchand",
-      team: "Boston Bruins",
-      position: "Ailier Gauche",
+      team: t("stats.teams.boston"),
+      position: t("stats.positions.leftWing"),
       points: 69,
       goals: 29,
       assists: 40,
@@ -59,8 +60,8 @@ export default function Stats() {
 
     {
       name: "David Pastrnak",
-      team: "Boston Bruins",
-      position: "Ailier Droit",
+      team: t("stats.teams.boston"),
+      position: t("stats.positions.rightWing"),
       points: 48,
       goals: 20,
       assists: 28,
@@ -69,8 +70,8 @@ export default function Stats() {
     },
     {
       name: "Mark Stone",
-      team: "Vegas Golden Knights",
-      position: "Ailier Droit",
+      team: t("stats.teams.vegas"),
+      position: t("stats.positions.rightWing"),
       points: 61,
       goals: 21,
       assists: 40,
@@ -79,8 +80,8 @@ export default function Stats() {
     },
     {
       name: "Max Pacioretty",
-      team: "Vegas Golden Knights",
-      position: "Ailier Gauche",
+      team: t("stats.teams.vegas"),
+      position: t("stats.positions.leftWing"),
       points: 51,
       goals: 24,
       assists: 27,
@@ -89,8 +90,8 @@ export default function Stats() {
     },
     {
       name: "Nathan MacKinnon",
-      team: "Colorado Avalanche",
-      position: "Centre",
+      team: t("stats.teams.colorado"),
+      position: t("stats.positions.center"),
       points: 65,
       goals: 20,
       assists: 45,
@@ -99,8 +100,8 @@ export default function Stats() {
     },
     {
       name: "Mikko Rantanen",
-      team: "Colorado Avalanche",
-      position: "Ailier Droit",
+      team: t("stats.teams.colorado"),
+      position: t("stats.positions.rightWing"),
       points: 66,
       goals: 30,
       assists: 36,
@@ -109,8 +110,8 @@ export default function Stats() {
     },
     {
       name: "Patrick Kane",
-      team: "Chicago Blackhawks",
-      position: "Ailier Droit",
+      team: t("stats.teams.chicago"),
+      position: t("stats.positions.rightWing"),
       points: 66,
       goals: 15,
       assists: 51,
@@ -119,8 +120,8 @@ export default function Stats() {
     },
     {
       name: "Alex DeBrincat",
-      team: "Chicago Blackhawks",
-      position: "Ailier Gauche",
+      team: t("stats.teams.chicago"),
+      position: t("stats.positions.leftWing"),
       points: 54,
       goals: 32,
       assists: 22,
@@ -129,8 +130,8 @@ export default function Stats() {
     },
     {
       name: "Kirill Kaprizov",
-      team: "Minnesota Wild",
-      position: "Ailier Gauche",
+      team: t("stats.teams.minnesota"),
+      position: t("stats.positions.leftWing"),
       points: 51,
       goals: 27,
       assists: 24,
@@ -139,8 +140,8 @@ export default function Stats() {
     },
     {
       name: "Kevin Fiala",
-      team: "Minnesota Wild",
-      position: "Ailier Droit",
+      team: t("stats.teams.minnesota"),
+      position: t("stats.positions.rightWing"),
       points: 40,
       goals: 20,
       assists: 20,
@@ -149,8 +150,8 @@ export default function Stats() {
     },
     {
       name: "Anze Kopitar",
-      team: "Los Angeles Kings",
-      position: "Centre",
+      team: t("stats.teams.losangeles"),
+      position: t("stats.positions.center"),
       points: 62,
       goals: 14,
       assists: 48,
@@ -159,8 +160,8 @@ export default function Stats() {
     },
     {
       name: "Dustin Brown",
-      team: "Los Angeles Kings",
-      position: "Ailier Droit",
+      team: t("stats.teams.losangeles"),
+      position: t("stats.positions.rightWing"),
       points: 51,
       goals: 17,
       assists: 34,
@@ -169,8 +170,8 @@ export default function Stats() {
     },
     {
       name: "Johnny Gaudreau",
-      team: "Calgary Flames",
-      position: "Ailier Gauche",
+      team: t("stats.teams.calgary"),
+      position: t("stats.positions.leftWing"),
       points: 49,
       goals: 19,
       assists: 30,
@@ -179,8 +180,8 @@ export default function Stats() {
     },
     {
       name: "Matthew Tkachuk",
-      team: "Calgary Flames",
-      position: "Ailier Gauche",
+      team: t("stats.teams.calgary"),
+      position: t("stats.positions.leftWing"),
       points: 43,
       goals: 8,
       assists: 35,
@@ -193,31 +194,33 @@ export default function Stats() {
 
   return (
     <div className="w-full h-full flex flex-col items-center bg-slate-200 py-16">
-      <h1 className="text-3xl font-bold text-center p-4 mb-10">Statistiques</h1>
+      <h1 className="text-3xl font-bold text-center p-4 mb-10">
+        {t("stats.title")}
+      </h1>
 
       <div className="flex flex-col items-center justify-center w-10/12 border">
         <select
           className="w-1/4 bg-button text-white font-bold p-4 rounded-xl mb-4"
           onChange={(e) => setSortBy(e.target.value)}
         >
-          <option value="points">Points</option>
-          <option value="goals">Buts</option>
-          <option value="assists">Passes</option>
-          <option value="gamesPlayed">Matchs Joués</option>
-          <option value="plusMinus">Plus/Moins</option>
-          <option value="team">Équipe</option>
+          <option value="points">{t("stats.points")}</option>
+          <option value="goals">{t("stats.goals")}</option>
+          <option value="assists">{t("stats.assists")}</option>
+          <option value="gamesPlayed">{t("stats.gamesPlayed")}</option>
+          <option value="plusMinus">{t("stats.plusMinus")}</option>
+          <option value="team">{t("stats.team")}</option>
         </select>
         <table className="border border-black bg-slate-100 rounded-xl">
           <thead>
             <tr className="border border-black">
-              <th className="p-4 text-center">Joueur</th>
-              <th className="p-4 text-center">Équipe</th>
-              <th className="p-4 text-center">Position</th>
-              <th className="p-4 text-center">Points</th>
-              <th className="p-4 text-center">Buts</th>
-              <th className="p-4 text-center">Passes</th>
-              <th className="p-4 text-center">Matchs Joués</th>
-              <th className="p-4 text-center">Plus/Moins</th>
+              <th className="p-4 text-center">{t("stats.player")}</th>
+              <th className="p-4 text-center">{t("stats.team")}</th>
+              <th className="p-4 text-center">{t("stats.position")}</th>
+              <th className="p-4 text-center">{t("stats.points")}</th>
+              <th className="p-4 text-center">{t("stats.goals")}</th>
+              <th className="p-4 text-center">{t("stats.assists")}</th>
+              <th className="p-4 text-center">{t("stats.gamesPlayed")}</th>
+              <th className="p-4 text-center">{t("stats.plusMinus")}</th>
             </tr>
           </thead>
           <tbody>
@@ -244,31 +247,25 @@ export default function Stats() {
         </table>
 
         <h2 className="text-2xl font-bold text-center p-4 my-10">
-          Que pensent les pros?
+          {t("pros.title")}
         </h2>
         <div className="flex  flex-col items-center justify-center w-10/12 border gap-4">
           <div className="flex md:flex-col flex-row items-center justify-left bg-slate-300 rounded-xl p-8 w-full">
             <img src={oilers} alt="Oilers" className="w-16 h-16" />
             <img src={mcdavid} alt="McDavid" className="w-16 h-16" />
-            <p className="p-4 text-center">
-              "Connor McDavid est le meilleur joueur de la ligue, il est
-              incroyable!"
-            </p>
+            <p className="p-4 text-center">{t("pros.mcdavid")}</p>
             <p className="p-4 text-center font-bold">
               {" "}
-              - John Doe, Analyste ESPN
+              - John Doe, {t("pros.espn")}
             </p>
           </div>
           <div className="flex md:flex-col flex-row items-center justify-left bg-slate-300 rounded-xl p-8 w-full">
             <img src={blackhawks} alt="Oilers" className="w-16 h-16" />
             <img src={bedard} alt="McDavid" className="w-16 h-16" />
-            <p className="p-4 text-center">
-              "Connor Bedard est le future du hockey, son potentiel est
-              exceptionnel!"
-            </p>
+            <p className="p-4 text-center">{t("pros.bedard")}</p>
             <p className="p-4 text-center font-bold">
               {" "}
-              - Marc Doe, Analyste Sportsnet
+              - Marc Doe, {t("pros.sportsnet")}
             </p>
           </div>
         </div>

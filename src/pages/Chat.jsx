@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import oilers from "../assets/oilers.png";
 import panthers from "../assets/panthers.png";
 import { Link } from "react-router-dom";
+import { t } from "../i18n";
 
 export default function Chat() {
   const [messages1, setMessages1] = useState([
@@ -61,20 +62,22 @@ export default function Chat() {
 
   return (
     <section className="w-full h-full flex flex-col items-center bg-slate-200  py-16">
-      <h1 className="text-3xl font-bold text-center p-4 mb-10">Prédictions</h1>
+      <h1 className="text-3xl font-bold text-center p-4 mb-10">
+        {t("chat.title")}
+      </h1>
       <div className="flex flex-col items-center justify-center w-10/12">
         <div className="flex justify-between items-center mb-6 w-full">
           <h2 className="text-2xl font-bold">Chat</h2>
           <Link to="/">
             <button className="bg-blue-500 text-white py-2 px-4 rounded">
-              Quitter la Salle
+              {t("chat.leave")}
             </button>
           </Link>
         </div>
         <div className="bg-white rounded-lg shadow-md p-6 w-full">
           <div className="bg-oilers text-white py-8 px-4 rounded-t-lg flex items-center justify-center gap-2">
             <img src={oilers} alt="Oilers" className="w-12 h-12" />
-            <h3 className="text-xl font-bold">Go Oilers!!</h3>
+            <h3 className="text-xl font-bold">{t("chat.oilersHub")}</h3>
           </div>
           <div
             id="scroller1"
@@ -101,7 +104,7 @@ export default function Chat() {
             <input
               type="text"
               className="flex-1 p-2 border rounded mr-4"
-              placeholder="Tapez votre message ici..."
+              placeholder={t("chat.type")}
               value={newMessage1}
               onChange={(e) => setNewMessage1(e.target.value)}
               onKeyDown={(e) => e.key === "Enter" && handleSendMessage1()}
@@ -117,7 +120,7 @@ export default function Chat() {
         <div className="bg-white rounded-lg shadow-md p-6 w-full mt-12">
           <div className="bg-panthers text-white py-8 px-4 rounded-t-lg flex items-center justify-center gap-2">
             <img src={panthers} alt="Oilers" className="w-12 h-12" />
-            <h3 className="text-xl font-bold">Go Panthers!!</h3>
+            <h3 className="text-xl font-bold">{t("chat.panthersHub")}</h3>
           </div>
           <div
             id="scroller2"
@@ -144,7 +147,7 @@ export default function Chat() {
             <input
               type="text"
               className="flex-1 p-2 border rounded mr-4"
-              placeholder="Tapez votre message ici..."
+              placeholder={t("chat.type")}
               value={newMessage2}
               onChange={(e) => setNewMessage2(e.target.value)}
               onKeyDown={(e) => e.key === "Enter" && handleSendMessage2()}

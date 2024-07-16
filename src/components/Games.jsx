@@ -1,12 +1,13 @@
 import oilers from "../assets/oilers.png";
 import panthers from "../assets/panthers.png";
+import { t } from "../i18n";
 
 export default function Games() {
   const data = [
     {
-      team1: "Edmonton Oilers",
+      team1: t("games.oilers"),
       picture1: oilers,
-      team2: "Florida Panthers",
+      team2: t("games.panthers"),
       picture2: panthers,
       score1: 5,
       score2: 1,
@@ -14,9 +15,9 @@ export default function Games() {
       date: "2024-6-21",
     },
     {
-      team1: "Edmonton Oilers",
+      team1: t("games.oilers"),
       picture1: oilers,
-      team2: "Florida Panthers",
+      team2: t("games.panthers"),
       picture2: panthers,
       score1: 5,
       score2: 3,
@@ -24,9 +25,9 @@ export default function Games() {
       date: "2024-6-18",
     },
     {
-      team1: "Edmonton Oilers",
+      team1: t("games.oilers"),
       picture1: oilers,
-      team2: "Florida Panthers",
+      team2: t("games.panthers"),
       picture2: panthers,
       score1: 8,
       score2: 1,
@@ -34,9 +35,9 @@ export default function Games() {
       date: "2024-6-15",
     },
     {
-      team1: "Edmonton Oilers",
+      team1: t("games.oilers"),
       picture1: oilers,
-      team2: "Florida Panthers",
+      team2: t("games.panthers"),
       picture2: panthers,
       score1: 3,
       score2: 4,
@@ -48,7 +49,7 @@ export default function Games() {
   return (
     <section className="bg-slate-200 py-16">
       <h1 className="text-3xl font-bold text-center p-4 mb-10">
-        Parties Récentes
+        {t("games.title")}
       </h1>
       <div className="flex items-center justify-center w-full">
         <div className="w-10/12 grid grid-cols-2 gap-8 md:grid-cols-1">
