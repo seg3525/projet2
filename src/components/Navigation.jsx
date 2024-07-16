@@ -6,6 +6,7 @@ import { useStore } from "@nanostores/react";
 
 export default function Navigation() {
   const $locale = useStore(locale);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
   var prevScrollpos = window.pageYOffset;
   window.onscroll = function () {
@@ -17,6 +18,12 @@ export default function Navigation() {
     }
     prevScrollpos = currentScrollPos;
   };
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 768) {
+      setSidebarOpen(false);
+    }
+  });
 
   return (
     <>
@@ -45,7 +52,13 @@ export default function Navigation() {
           </button>
         </div>
         <div>
-          <ul className="flex flex-row gap-8">
+          <ul
+            className={
+              sidebarOpen
+                ? "flex flex-col gap-4 absolute top-20 right-0 bg-black text-white p-4 rounded-lg shadow-lg"
+                : "flex flex-row gap-8 md:hidden"
+            }
+          >
             <li>
               <Link to="/statistiques">{t("navbar.stats")}</Link>
             </li>
@@ -56,6 +69,27 @@ export default function Navigation() {
               <Link to="/chat">{t("navbar.chat")}</Link>
             </li>
           </ul>
+          <button
+            className="hidden md:block"
+            onClick={() => {
+              setSidebarOpen(!sidebarOpen);
+            }}
+          >
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
         </div>
       </nav>
       <Outlet />
