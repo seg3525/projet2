@@ -3,8 +3,16 @@ import oilers from "../assets/oilers.png";
 import panthers from "../assets/panthers.png";
 import { Link } from "react-router-dom";
 import { t } from "../i18n";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Chat() {
+  const notify = () => {
+    toast.error("Format du message incorrect!", {
+      position: "top-right",
+    });
+  };
+
   const [messages1, setMessages1] = useState([
     { id: 1, user: "John Doe", text: "La partie hier soir était incroyable!" },
     { id: 2, user: "Mary Doe", text: "As-tu vu le but en fin de match!" },
@@ -19,12 +27,14 @@ export default function Chat() {
   const [newMessage1, setNewMessage1] = useState("");
 
   const handleSendMessage1 = () => {
-    if (newMessage1.trim()) {
+    if (newMessage1.trim() && newMessage1.length < 100) {
       setMessages1([
         ...messages1,
         { id: messages1.length + 1, user: "Vous", text: newMessage1 },
       ]);
       setNewMessage1("");
+    } else {
+      notify();
     }
   };
 
@@ -51,17 +61,20 @@ export default function Chat() {
   const [newMessage2, setNewMessage2] = useState("");
 
   const handleSendMessage2 = () => {
-    if (newMessage2.trim()) {
+    if (newMessage2.trim() && newMessage2.length < 100) {
       setMessages2([
         ...messages2,
         { id: messages2.length + 1, user: "Vous", text: newMessage2 },
       ]);
       setNewMessage2("");
+    } else {
+      notify();
     }
   };
 
   return (
     <section className="w-full h-full flex flex-col items-center bg-slate-200  py-16">
+      <ToastContainer />
       <h1 className="text-3xl font-bold text-center p-4 mb-10">
         {t("chat.title")}
       </h1>
