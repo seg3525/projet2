@@ -10,7 +10,7 @@ export default function Predictions() {
       <h1 className="text-3xl font-bold text-center p-4 mb-10">
         {t("predictions.title")}
       </h1>
-      <div className="flex flex-col items-center justify-center w-10/12">
+      <div className="flex flex-col items-center justify-center w-10/12 md:w-11/12">
         <div className="flex w-full justify-between items-center mb-6">
           <h2 className="text-2xl font-bold">{t("predictions.today")}</h2>
           <span className="text-lg">Score : 14/45</span>
@@ -24,10 +24,10 @@ export default function Predictions() {
               id="vote1green"
               className="flex flex-col items-center border-4 border-green-500 bg-slate-100 p-4 rounded-lg"
             >
-              <img src={oilers} alt="Oilers" className="w-16 h-16 mb-4" />
+              <img src={oilers} alt="Oilers Logo" className="w-16 h-16 mb-4" />
               <span className="text-2xl font-bold mb-2">54%</span>
               <button
-                className="bg-blue-500 text-white py-2 px-4 rounded"
+                className="bg-blue-500 text-white py-2 px-4 rounded duration-200 hover:bg-hover"
                 onClick={() => {
                   document.getElementById("vote1green").style.backgroundColor =
                     "#21c55d";
@@ -42,10 +42,14 @@ export default function Predictions() {
               id="vote1red"
               className="flex flex-col items-center border-4 border-red-500 bg-slate-100 p-4 rounded-lg"
             >
-              <img src={panthers} alt="Panthers" className="w-16 h-16 mb-4" />
+              <img
+                src={panthers}
+                alt="Panthers Logo"
+                className="w-16 h-16 mb-4"
+              />
               <span className="text-2xl font-bold mb-2">46%</span>
               <button
-                className="bg-blue-500 text-white py-2 px-4 rounded"
+                className="bg-blue-500 text-white py-2 px-4 rounded duration-200 hover:bg-hover"
                 onClick={() => {
                   document.getElementById("vote1green").style.backgroundColor =
                     "#f1f5f9";
@@ -67,10 +71,14 @@ export default function Predictions() {
               id="vote2green1"
               className="flex flex-col items-center border-4 border-red-500 bg-slate-100 p-4 rounded-lg"
             >
-              <img src={mcdavid} alt="McDavid" className="w-16 h-16 mb-4" />
+              <img
+                src={mcdavid}
+                alt="McDavid Headshot"
+                className="w-16 h-16 mb-4"
+              />
               <span className="text-2xl font-bold mb-2">27%</span>
               <button
-                className="bg-blue-500 text-white py-2 px-4 rounded"
+                className="bg-blue-500 text-white py-2 px-4 rounded duration-200 hover:bg-hover"
                 onClick={() => {
                   document.getElementById("vote2green1").style.backgroundColor =
                     "#ef4444";
@@ -87,10 +95,14 @@ export default function Predictions() {
               id="vote2green2"
               className="flex flex-col items-center border-4 border-red-500 bg-slate-100 p-4 rounded-lg"
             >
-              <img src={barkov} alt="Barkov" className="w-16 h-16 mb-4" />
+              <img
+                src={barkov}
+                alt="Barkov Headshot"
+                className="w-16 h-16 mb-4"
+              />
               <span className="text-2xl font-bold mb-2">16%</span>
               <button
-                className="bg-blue-500 text-white py-2 px-4 rounded"
+                className="bg-blue-500 text-white py-2 px-4 rounded duration-200 hover:bg-hover"
                 onClick={() => {
                   document.getElementById("vote2green2").style.backgroundColor =
                     "#ef4444";
@@ -112,7 +124,7 @@ export default function Predictions() {
               </span>
               <span className="text-2xl font-bold mb-2">57%</span>
               <button
-                className="bg-blue-500 text-white py-2 px-4 rounded"
+                className="bg-blue-500 text-white py-2 px-4 rounded duration-200 hover:bg-hover"
                 onClick={() => {
                   document.getElementById("vote2green2").style.backgroundColor =
                     "#f1f5f9";
@@ -128,12 +140,12 @@ export default function Predictions() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center w-10/12 mt-24">
+      <div className="flex flex-col items-center justify-center w-10/12 md:w-11/12 mt-24">
         <div className="flex w-full justify-between items-center mb-6">
           <h2 className="text-2xl font-bold">{t("fantasy.title")}</h2>
           <span className="text-lg">{t("fantasy.betterOdd")}</span>
         </div>
-        <div className="bg-white w-full rounded-lg shadow-md p-6 mt-6">
+        <div className="bg-white w-full rounded-lg shadow-md p-6 md:p-2 mt-6">
           <div className="grid grid-cols-2 gap-4">
             <div className="flex flex-col items-center border-4 border-blue-500 bg-slate-100 p-4 rounded-lg transition-all duration-200  hover:bg-blue-300">
               <span className="text-2xl font-bold mb-2">1</span>

@@ -8,7 +8,8 @@ export default {
         panthers: "#C8102E",
       },
       backgroundColor: {
-        button: "#0b8ce9",
+        button: "#0D7AC9",
+        hover: "#0C6AB1",
         oilers: "#FC4C02",
         panthers: "#C8102E",
       },

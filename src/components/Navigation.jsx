@@ -38,7 +38,7 @@ export default function Navigation() {
               window.location.href = "/projet2/";
             }}
           >
-            <img src={logo} alt="logo" className="w-10 h-10" />
+            <img src={logo} alt="Cup Quest Logo" className="w-10 h-10" />
             <span className="font-bold">Cup Quest</span>
           </div>
           <button
@@ -60,13 +60,19 @@ export default function Navigation() {
             }
           >
             <li>
-              <Link to="/statistiques">{t("navbar.stats")}</Link>
+              <Link to="/statistiques" className="hover:underline">
+                {t("navbar.stats")}
+              </Link>
             </li>
             <li>
-              <Link to="/predictions">{t("navbar.predictions")}</Link>
+              <Link to="/predictions" className="hover:underline">
+                {t("navbar.predictions")}
+              </Link>
             </li>
             <li>
-              <Link to="/chat">{t("navbar.chat")}</Link>
+              <Link to="/chat" className="hover:underline">
+                {t("navbar.chat")}
+              </Link>
             </li>
           </ul>
           <button

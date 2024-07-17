@@ -47,7 +47,7 @@ export default function Games() {
   ];
 
   return (
-    <section className="bg-slate-200 py-16">
+    <section className="bg-slate-300 py-16">
       <h1 className="text-3xl font-bold text-center p-4 mb-10">
         {t("games.title")}
       </h1>
@@ -64,19 +64,19 @@ export default function Games() {
 
 const GameCard = ({ gameData }) => {
   return (
-    <div className="flex flex-row items-center justify-center gap-4 p-4 bg-slate-100 border-gray-200 rounded-xl">
+    <div className="flex flex-row items-center justify-center gap-4 p-4 bg-slate-100 border-gray-500 border-4 rounded-xl">
       <div className="flex flex-col items-center">
-        <img src={gameData.picture1} alt="team1" className="w-20 h-20" />
+        <img src={gameData.picture1} alt="Card team1" className="w-20 h-20" />
         <span className="font-bold">{gameData.team1}</span>
       </div>
       <div className="flex flex-col items-center">
         <span className="font-bold text-3xl">
           {gameData.score1} - {gameData.score2}
         </span>
-        <span className="text-gray-500">{gameData.tag}</span>
+        <span className="text-gray-900">{gameData.tag}</span>
       </div>
       <div className="flex flex-col items-center">
-        <img src={gameData.picture2} alt="team2" className="w-20 h-20" />
+        <img src={gameData.picture2} alt="Card team2" className="w-20 h-20" />
         <span className="font-bold">{gameData.team2}</span>
       </div>
     </div>

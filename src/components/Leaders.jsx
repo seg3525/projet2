@@ -33,7 +33,7 @@ export default function Leaders() {
                 />
                 <div className="relative">
                   <h2 className="font-bold">Connor McDavid</h2>
-                  <p className="font-bold text-zinc-400">#97 • EDM • C</p>
+                  <p className="font-bold text-zinc-600">#97 • EDM • C</p>
                   <div className="grid grid-cols-3 gap-4">
                     <div className="flex flex-col items-center bg-zinc-300 rounded-xl p-4">
                       <span className="font-bold text-3xl">42</span>
@@ -65,7 +65,7 @@ export default function Leaders() {
                 />
                 <div className="relative">
                   <h2 className="font-bold">Aleksander Barkov</h2>
-                  <p className="font-bold text-zinc-400">#16 • FLA • C</p>
+                  <p className="font-bold text-zinc-600">#16 • FLA • C</p>
                   <div className="grid grid-cols-3 gap-4">
                     <div className="flex flex-col items-center bg-zinc-300 rounded-xl p-4">
                       <span className="font-bold text-3xl">22</span>
@@ -87,7 +87,7 @@ export default function Leaders() {
 
           <div className="flex flex-row items-center justify-center gap-4 mt-16">
             <Link to="/statistiques">
-              <button className="bg-button text-white font-bold p-4 rounded-xl">
+              <button className="bg-button text-white font-bold p-4 rounded-xl duration-200 hover:bg-hover">
                 {t("leaders.btn")}
               </button>
             </Link>

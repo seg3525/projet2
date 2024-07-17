@@ -10,12 +10,12 @@ export default function Bracket() {
       </h1>
       <img
         src={bracket}
-        alt="bracket"
+        alt="Playoff Bracket Picture"
         className="w-[80%] h-auto object-cover border pt-8"
       />
       <div className="flex flex-row items-center justify-center mt-16">
         <Link to="/predictions">
-          <button className="bg-button text-white font-bold p-4 rounded-xl">
+          <button className="bg-button text-white font-bold p-4 rounded-xl duration-200 hover:bg-hover">
             {t("bracket.btn")}
           </button>
         </Link>

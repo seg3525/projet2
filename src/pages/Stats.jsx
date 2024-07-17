@@ -198,9 +198,9 @@ export default function Stats() {
         {t("stats.title")}
       </h1>
 
-      <div className="flex flex-col items-center justify-center w-10/12 border">
+      <div className="flex flex-col items-center justify-center w-10/12 lg:w-full border overflow-auto">
         <select
-          className="w-1/4 bg-button text-white font-bold p-4 rounded-xl mb-4"
+          className="w-1/4 lg:w-1/2 bg-button text-white font-bold p-4 rounded-xl mb-4 duration-200 hover:bg-hover cursor-pointer"
           onChange={(e) => setSortBy(e.target.value)}
         >
           <option value="points">{t("stats.points")}</option>
@@ -251,8 +251,8 @@ export default function Stats() {
         </h2>
         <div className="flex  flex-col items-center justify-center w-10/12 border gap-4">
           <div className="flex md:flex-col flex-row items-center justify-left bg-slate-300 rounded-xl p-8 w-full">
-            <img src={oilers} alt="Oilers" className="w-16 h-16" />
-            <img src={mcdavid} alt="McDavid" className="w-16 h-16" />
+            <img src={oilers} alt="Oilers Logo" className="w-16 h-16" />
+            <img src={mcdavid} alt="McDavid Headshot" className="w-16 h-16" />
             <p className="p-4 text-center">{t("pros.mcdavid")}</p>
             <p className="p-4 text-center font-bold">
               {" "}
@@ -260,8 +260,8 @@ export default function Stats() {
             </p>
           </div>
           <div className="flex md:flex-col flex-row items-center justify-left bg-slate-300 rounded-xl p-8 w-full">
-            <img src={blackhawks} alt="Oilers" className="w-16 h-16" />
-            <img src={bedard} alt="McDavid" className="w-16 h-16" />
+            <img src={blackhawks} alt="BlackHawks Logo" className="w-16 h-16" />
+            <img src={bedard} alt="Bedard headshot" className="w-16 h-16" />
             <p className="p-4 text-center">{t("pros.bedard")}</p>
             <p className="p-4 text-center font-bold">
               {" "}

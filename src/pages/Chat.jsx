@@ -69,14 +69,14 @@ export default function Chat() {
         <div className="flex justify-between items-center mb-6 w-full">
           <h2 className="text-2xl font-bold">Chat</h2>
           <Link to="/">
-            <button className="bg-blue-500 text-white py-2 px-4 rounded">
+            <button className="bg-blue-500 text-white py-2 px-4 rounded duration-200 hover:bg-hover">
               {t("chat.leave")}
             </button>
           </Link>
         </div>
         <div className="bg-white rounded-lg shadow-md p-6 w-full">
           <div className="bg-oilers text-white py-8 px-4 rounded-t-lg flex items-center justify-center gap-2">
-            <img src={oilers} alt="Oilers" className="w-12 h-12" />
+            <img src={oilers} alt="Oilers Logo" className="w-12 h-12" />
             <h3 className="text-xl font-bold">{t("chat.oilersHub")}</h3>
           </div>
           <div
@@ -97,7 +97,7 @@ export default function Chat() {
           </div>
           <div className="flex items-center mt-4 p-4 bg-gray-300 rounded-b-lg">
             <button className="w-10 h-10 bg-gray-400 rounded-full flex items-center justify-center mr-4">
-              <span role="img" aria-label="emoji">
+              <span role="img" aria-label="Emoji Selector">
                 😎
               </span>
             </button>
@@ -110,7 +110,7 @@ export default function Chat() {
               onKeyDown={(e) => e.key === "Enter" && handleSendMessage1()}
             />
             <button
-              className="w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center"
+              className="w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center duration-200 hover:bg-hover"
               onClick={handleSendMessage1}
             >
               <span>&#9650;</span>
@@ -119,7 +119,7 @@ export default function Chat() {
         </div>
         <div className="bg-white rounded-lg shadow-md p-6 w-full mt-12">
           <div className="bg-panthers text-white py-8 px-4 rounded-t-lg flex items-center justify-center gap-2">
-            <img src={panthers} alt="Oilers" className="w-12 h-12" />
+            <img src={panthers} alt="Panthers Logo" className="w-12 h-12" />
             <h3 className="text-xl font-bold">{t("chat.panthersHub")}</h3>
           </div>
           <div
@@ -140,7 +140,7 @@ export default function Chat() {
           </div>
           <div className="flex items-center mt-4 p-4 bg-gray-300 rounded-b-lg">
             <button className="w-10 h-10 bg-gray-400 rounded-full flex items-center justify-center mr-4">
-              <span role="img" aria-label="emoji">
+              <span role="img" aria-label="Emoji Selector">
                 😎
               </span>
             </button>
@@ -153,7 +153,7 @@ export default function Chat() {
               onKeyDown={(e) => e.key === "Enter" && handleSendMessage2()}
             />
             <button
-              className="w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center"
+              className="w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center duration-200 hover:bg-hover"
               onClick={handleSendMessage2}
             >
               <span>&#9650;</span>

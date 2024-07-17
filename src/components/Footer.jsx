@@ -16,35 +16,41 @@ export default function Footer() {
             window.location.href = "/projet2/";
           }}
         >
-          <img src={logo} alt="logo" className="w-10 h-10" />
+          <img src={logo} alt="Cup Quest logo" className="w-10 h-10" />
           <span className="font-bold">Cup Quest</span>
         </div>
         <div>
           <ul className="flex flex-row gap-4 items-center">
             <li>
-              <img src={facebook} alt="Icon" />
+              <img src={facebook} alt="Facebook Icon" />
             </li>
             <li>
-              <img src={linkedin} alt="Icon" />
+              <img src={linkedin} alt="LinkedIn Icon" />
             </li>
             <li>
-              <img src={youtube} alt="Icon" />
+              <img src={youtube} alt="Youtube Icon" />
             </li>
             <li>
-              <img src={instagram} alt="Icon" />
+              <img src={instagram} alt="Instagram Icon" />
             </li>
           </ul>
         </div>
         <div>
-          <ul className="flex flex-row gap-4 font-bold">
+          <ul className="flex flex-row gap-8 font-bold">
             <li>
-              <Link to="/statistiques">{t("navbar.stats")}</Link>
+              <Link to="/statistiques" className="hover:underline">
+                {t("navbar.stats")}
+              </Link>
             </li>
             <li>
-              <Link to="/predictions">{t("navbar.predictions")}</Link>
+              <Link to="/predictions" className="hover:underline">
+                {t("navbar.predictions")}
+              </Link>
             </li>
             <li>
-              <Link to="/chat">{t("navbar.chat")}</Link>
+              <Link to="/chat" className="hover:underline">
+                {t("navbar.chat")}
+              </Link>
             </li>
           </ul>
         </div>
